@@ -1,0 +1,40 @@
+C:\WorkRoom\C#\OPC\OpcDaClient\bin\Debug\OpcDa.Client.dll
+C:\WorkRoom\C#\OPC\OpcDaClient\bin\Debug\OpcDa.Client.pdb
+C:\WorkRoom\C#\OPC\OpcDaClient\OpcDa.Client\obj\Debug\ResolveAssemblyReference.cache
+C:\WorkRoom\C#\OPC\OpcDaClient\OpcDa.Client\obj\Debug\OpcDa.Client.dll
+C:\WorkRoom\C#\OPC\OpcDaClient\OpcDa.Client\obj\Debug\OpcDa.Client.pdb
+D:\WorkRoom\C#\OPC\OpcDaClient\bin\Debug\OpcDa.Client.dll
+D:\WorkRoom\C#\OPC\OpcDaClient\bin\Debug\OpcDa.Client.pdb
+D:\WorkRoom\C#\OPC\OpcDaClient\OpcDa.Client\obj\Debug\ResolveAssemblyReference.cache
+D:\WorkRoom\C#\OPC\OpcDaClient\OpcDa.Client\obj\Debug\OpcDa.Client.dll
+D:\WorkRoom\C#\OPC\OpcDaClient\OpcDa.Client\obj\Debug\OpcDa.Client.pdb
+D:\WorkRoom\VS2010\OPC\OpcDaClient\bin\Debug\OpcDa.Client.dll
+D:\WorkRoom\VS2010\OPC\OpcDaClient\bin\Debug\OpcDa.Client.pdb
+D:\WorkRoom\VS2010\OPC\OpcDaClient\OpcDa.Client\obj\Debug\OpcDa.Client.csprojResolveAssemblyReference.cache
+D:\WorkRoom\VS2010\OPC\OpcDaClient\OpcDa.Client\obj\Debug\OpcDa.Client.dll
+D:\WorkRoom\VS2010\OPC\OpcDaClient\OpcDa.Client\obj\Debug\OpcDa.Client.pdb
+E:\Software\OpcDaClient\bin\Debug\OpcDa.Client.dll
+E:\Software\OpcDaClient\bin\Debug\OpcDa.Client.pdb
+E:\Software\OpcDaClient\OpcDa.Client\obj\Debug\OpcDa.Client.csprojResolveAssemblyReference.cache
+E:\Software\OpcDaClient\OpcDa.Client\obj\Debug\OpcDa.Client.dll
+E:\Software\OpcDaClient\OpcDa.Client\obj\Debug\OpcDa.Client.pdb
+C:\Users\Administrator\Desktop\OpcDaClient\bin\Debug\OpcDa.Client.dll
+C:\Users\Administrator\Desktop\OpcDaClient\bin\Debug\OpcDa.Client.pdb
+C:\Users\Administrator\Desktop\OpcDaClient\OpcDa.Client\obj\Debug\OpcDa.Client.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\OpcDaClient\OpcDa.Client\obj\Debug\OpcDa.Client.dll
+C:\Users\Administrator\Desktop\OpcDaClient\OpcDa.Client\obj\Debug\OpcDa.Client.pdb
+E:\Software\OpcDaClient配电\bin\Debug\OpcDa.Client.dll
+E:\Software\OpcDaClient配电\bin\Debug\OpcDa.Client.pdb
+E:\Software\OpcDaClient配电\OpcDa.Client\obj\Debug\OpcDa.Client.dll
+E:\Software\OpcDaClient配电\OpcDa.Client\obj\Debug\OpcDa.Client.pdb
+E:\Software\OpcDaClient配电\OpcDa.Client\obj\Debug\OpcDa.Client.csprojResolveAssemblyReference.cache
+F:\Program Files\OpcDaClient配电\bin\Debug\OpcDa.Client.dll
+F:\Program Files\OpcDaClient配电\bin\Debug\OpcDa.Client.pdb
+F:\Program Files\OpcDaClient配电\OpcDa.Client\obj\Debug\OpcDa.Client.csprojResolveAssemblyReference.cache
+F:\Program Files\OpcDaClient配电\OpcDa.Client\obj\Debug\OpcDa.Client.dll
+F:\Program Files\OpcDaClient配电\OpcDa.Client\obj\Debug\OpcDa.Client.pdb
+F:\迅雷下载\WebSocketChatDemo\bin\Debug\OpcDa.Client.dll
+F:\迅雷下载\WebSocketChatDemo\bin\Debug\OpcDa.Client.pdb
+F:\迅雷下载\WebSocketChatDemo\OpcDa.Client\obj\Debug\OpcDa.Client.csprojResolveAssemblyReference.cache
+F:\迅雷下载\WebSocketChatDemo\OpcDa.Client\obj\Debug\OpcDa.Client.dll
+F:\迅雷下载\WebSocketChatDemo\OpcDa.Client\obj\Debug\OpcDa.Client.pdb

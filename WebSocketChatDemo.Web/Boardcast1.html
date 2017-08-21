@@ -1,0 +1,93 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>BoardCast</title>
+    <script type="text/javascript">
+        var url = "ws://192.168.0.67:7602";
+        var ws = null;
+        var state = null;
+        function onLoaded() {
+
+            if ("WebSocket" in window) {
+                ws = new WebSocket(url);
+            }
+            else if ("MozWebSocket" in window) {
+                ws = new MozWebSocket(url);
+            } else {
+                document.getElementById("message_output").innerHTML = "浏览器不支持WebSocket";
+            }
+
+            ws.onopen = function () {
+                document.getElementById("message_output").innerHTML = "连接服务器成功" + "<br/>";
+            }
+            ws.onclose = function () {
+                document.getElementById("message_output").innerHTML = "与服务器断开连接" + "<br/>";
+            }
+
+            ws.onerror = function () {
+                document.getElementById("message_output").innerHTML = "通信发生错误" + "<br/>";
+            }
+            ws.onmessage = function (msg) {
+                var array = msg.data.split(",");
+                switch (array[0])
+                {case "Channel_0_User_Defined.Random.Random1":
+                    document.getElementById("message_output1").innerHTML = array[1];
+                    break;
+                 case "Channel_0_User_Defined.Random.Random2":
+                     document.getElementById("message_output2").innerHTML = array[1];
+                     break;
+                    case "Channel_1.Device_1.Bool_1":
+                        if (array[1] == "False")
+                            changeElementEnabled(false);
+                        else
+                            changeElementEnabled(true);
+                        break;
+                
+                
+                }                 
+            }
+
+        }
+        function sendMessage(msg) {
+
+            if (ws) {
+                ws.send(msg);
+            }
+        }
+        function changeElementEnabled(state) {
+            if (state) {
+                var oBtn1 = document.getElementById("kaiji");
+                oBtn1.disabled = true;
+                var oBtn2 = document.getElementById("guanji");
+                oBtn2.disabled = false;
+            } else {
+                var oBtn1 = document.getElementById("kaiji");
+                oBtn1.disabled = false;
+                var oBtn2 = document.getElementById("guanji");
+                oBtn2.disabled = true;
+            }
+        }
+    </script>
+</head>
+<body onload="onLoaded()">
+    <div id="message_output"></div>
+    <div>
+        平均温度：
+        <div id="message_output1"></div>
+    </div>
+    <div>
+        平均湿度：
+        <div id="message_output2"></div>
+    </div>
+    <div>
+       状态：
+        <div id="message_output3"></div>
+    </div>
+    <div>
+        <input type="button" value="关机" id="kaiji" onclick="sendMessage('0')" />
+        <input type="button" value="开机" id="guanji" onclick="sendMessage('1')" />
+    </div>
+        <table style="width:100%;"><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr></table>
+</body>
+</html>

@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Chat</title>
+    <script type="text/javascript">
+
+        var url = "ws://localhost:2013";
+        var ws = null;
+        function onLogin() {
+
+            var name = document.getElementById("txt_name").value;
+
+            if (name.trim().length == 0) {
+                alert("请先输入用户名");
+                return;
+            }
+
+            var fullUrl = url + "/" + name;
+
+            if ("WebSocket" in window) {
+                ws = new WebSocket(fullUrl);
+            }
+            else if ("MozWebSocket" in window) {
+                ws = new MozWebSocket(fullUrl);
+            } else {
+                document.getElementById("message_output").innerHTML = "浏览器不支持WebSocket";
+            }
+
+            ws.onopen = function () {
+                document.getElementById("message_output").innerHTML += "连接服务器成功" + "<br/>";
+                changeElementEnabled(true);
+            }
+            ws.onclose = function () {
+                document.getElementById("message_output").innerHTML += "与服务器断开连接" + "<br/>";
+                changeElementEnabled(false);
+            }
+
+            ws.onerror = function () {
+                document.getElementById("message_output").innerHTML += "通信发生错误" + "<br/>";
+            }
+            ws.onmessage = function (msg) {
+                document.getElementById("message_output").innerHTML += msg.data + "<br/>";
+            }
+
+        }//初始化WebSocket连接
+
+        function sendMessage() {
+            var msg = document.getElementById("txt_message").value;
+            if (ws) {
+                ws.send(msg);
+            }
+        }//发送消息
+
+        function changeElementEnabled(state) {
+
+            if (state) {
+                document.getElementById("txt_name").setAttribute("disabled", "disabled");
+                document.getElementById("btn_login").setAttribute("disabled", "disabled");
+                document.getElementById("txt_message").removeAttribute("disabled");
+                document.getElementById("btn_send").removeAttribute("disabled");
+            } else {
+                document.getElementById("txt_name").removeAttribute("disabled");
+                document.getElementById("btn_login").removeAttribute("disabled");
+                document.getElementById("txt_message").setAttribute("disabled", "disabled");
+                document.getElementById("btn_send").setAttribute("disabled", "disabled");
+            }
+        }//不解释
+    </script>
+</head>
+
+<body>
+    <div>
+        YourName:<input type="text" value="" id="txt_name" />
+        <input type="button" value="Login" id="btn_login" onclick="onLogin()" />
+    </div>
+    <div>
+        Your Say:<input type="text" value="" id="txt_message" disabled="disabled" />
+        <input type="button" value="Send" id="btn_send" disabled="disabled" onclick="sendMessage()" />
+    </div>
+    <div id="message_output"></div>
+</body>
+</html>

@@ -1,0 +1,6 @@
+F:\迅雷下载\WebSocketChatDemo\WebSocketChatDemo.Web\bin\WebSocketChatDemo.Web.dll.config
+F:\迅雷下载\WebSocketChatDemo\WebSocketChatDemo.Web\bin\WebSocketChatDemo.Web.dll
+F:\迅雷下载\WebSocketChatDemo\WebSocketChatDemo.Web\bin\WebSocketChatDemo.Web.pdb
+F:\迅雷下载\WebSocketChatDemo\WebSocketChatDemo.Web\obj\Debug\WebSocketChatDemo.Web.dll
+F:\迅雷下载\WebSocketChatDemo\WebSocketChatDemo.Web\obj\Debug\WebSocketChatDemo.Web.pdb
+F:\迅雷下载\WebSocketChatDemo\WebSocketChatDemo.Web\obj\Debug\WebSocket.Web.csprojResolveAssemblyReference.cache
